@@ -15,7 +15,7 @@ namespace TrilhaApiDesafio.Controllers
             _context = context;
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("ObterPorId/{id}")]
         public IActionResult ObterPorId(int id)
         {
             var tarefaBanco = _context.Tarefas.Find(id);
